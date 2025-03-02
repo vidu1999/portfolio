@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "gh-pages -d out"
+    "deploy": "gh-pages -d out -f"
   },
   "dependencies": {
     "@react-pdf-viewer/core": "^3.12.0",
