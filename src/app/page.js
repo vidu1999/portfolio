@@ -1,8 +1,8 @@
 'use client'
 import React,{useState,useEffect} from 'react'
 import Image from "next/image";
-import bg from "./public/bg/bg.png";
-import pi from "./public/bg/vkj1.jpg";
+import bg from "/public/bg/bg.png";
+import pi from "/public/bg/vkj1.jpg";
 import RenderModels from "./compenents/RenderModels";
 import Com from "./compenents/models/Com";
 import Navigation from "./compenents/navigation";

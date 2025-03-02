@@ -20,11 +20,7 @@ const ItemLayout = ({children, className}) => {
 const About = () => {
 	const divRef = useRef(null);
 
-  useEffect(() => {
-    if (divRef.current) {
-      divRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  }, []);
+  
   return (
 	<>
 	<section  className="w-full h-screen lg:block item-center justify-center sm:grid">
