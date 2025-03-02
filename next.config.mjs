@@ -9,7 +9,7 @@ const nextConfig = {
     
   },
   //basePath: "/portfolio",  // Replace with your actual GitHub repo name
-  assetPrefix: isProd ? '/your-repo-name/' : '',
+  assetPrefix: isProd ? '/portfolio/' : '',
 };
 
 export default nextConfig;
