@@ -4,7 +4,7 @@ import { useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 export default function Model(props) {
   const gltf = useRef()
-  const { nodes, materials, animations } = useGLTF('/pu/models/low_poly_stone_arche-transformed.glb')
+  const { nodes, materials, animations } = useGLTF(process.env.NEXT_PUBLIC_BASE_PATH+'/models/low_poly_stone_arche-transformed.glb')
   return(
     <group ref={gltf} {...props} dispose={null}
     position={[-0.2,-2,0]}
