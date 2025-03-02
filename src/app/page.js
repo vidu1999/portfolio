@@ -55,7 +55,7 @@ try {
 
 </div>
 <div className="w-full h-screen flex justify-center items-center  bottom-10 proim fixed">
-<Image src={pi} className="" style={{width:140}}/>
+<Image src={pi} className="" alt='img' style={{width:140}}/>
 
   </div> 
   <div className="w-full h-screen flex justify-center items-end lg:items-center lg:top-16 bottom-10  fixed">

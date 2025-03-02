@@ -1,6 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import { ImgList } from '/src/app/data';
+import Image from 'next/image';
 const getRandomImage = () => {
     const randomIndex = Math.floor(Math.random() * ImgList.length); // Generate a random index
     return ImgList[randomIndex].name; // Return the image object
@@ -47,7 +48,7 @@ return () => clearInterval(interval)
     left: firefly.left,
     animation: `move ${firefly.animationDuration} infinite alternate`
     }}
-    ><img src={`/icon/${firefly.img}`} alt={`Random Image ${firefly.img}` }  width={300} // Set width as needed
+    ><Image src={`/icon/${firefly.img}`} alt={`Random Image ${firefly.img}` }  width={300} // Set width as needed
     height={200}// Set width as needed
     /></div>
 );

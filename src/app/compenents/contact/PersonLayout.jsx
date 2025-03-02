@@ -23,7 +23,7 @@ const PersonLayout = () => {
       {personData.map((project, index) =>{return (
         <div key={index} >
             <div className="proim mt-8">
-              <Image src={`/per/${project.img}`} width={100} height={100} className="border-10 border-white rounded-full" />
+              <Image src={`/per/${project.img}`} alt='img' width={100} height={100} className="border-10 border-white rounded-full" />
             </div>
             <h1 className="text-left text-base font-normal mb-1">{project.name}</h1>
             <h6 className="text-teal-500 font-small">{project.info}</h6>

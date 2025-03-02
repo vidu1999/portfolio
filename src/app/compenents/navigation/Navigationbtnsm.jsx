@@ -37,7 +37,7 @@ function Navigationbtnsm() {
           
     {leftIcons.map((icon, index) => (
         
-      <Link href={icon.link} 
+      <Link key={index} href={icon.link} 
       
         target={icon.newTab ? '_blank' : '_self'}
         className="text-foreground rounded-full  flex items-center justify-between custom-bg
@@ -55,7 +55,7 @@ aria-label={icon.label} name={icon.label}>
   </div>
   <div className="flex-1 flex flex-col items-end space-y-4 space-x-44">
     {rightIcons.map((icon, index) => (
-      <Link href={icon.link} 
+      <Link key={index} href={icon.link} 
       target={icon.newTab ? '_blank' : '_self'}
       className="text-foreground rounded-full  flex items-center justify-center custom-bg
 "

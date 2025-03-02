@@ -3,7 +3,7 @@ import React from 'react'
 import { Document, Page } from 'react-pdf';
 import { useState } from 'react';
 import Link from 'next/link'
-function page() {
+function ResumePage() {
   const [numPages, setNumPages] = useState(null);
   return (
     <><div className="flex-col justify-center space-x-4 w-full">
@@ -27,4 +27,4 @@ function page() {
   )
 }
 
-export default page;
+export default ResumePage;
