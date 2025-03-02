@@ -8,8 +8,8 @@ const nextConfig = {
     unoptimized: true, 
     
   },
-  //basePath: "/portfolio",  // Replace with your actual GitHub repo name
-  //assetPrefix: '/portfolio/' ,
+  basePath: "/portfolio",  
+  assetPrefix: '/portfolio/' ,
 };
 
 export default nextConfig;
