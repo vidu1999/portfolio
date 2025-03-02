@@ -1,10 +1,10 @@
 "use client"
 import React, { useRef } from 'react'
-import { useGLTF, useAnimations } from '@react-three/drei'
+import { useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 export default function Model(props) {
   const gltf = useRef()
-  const { nodes, materials, animations } = useGLTF('/models/low_poly_stone_arche-transformed.glb')
+  const { nodes, materials, animations } = useGLTF('./models/low_poly_stone_arche-transformed.glb')
   return(
     <group ref={gltf} {...props} dispose={null}
     position={[-0.2,-2,0]}
