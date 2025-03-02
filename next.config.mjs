@@ -8,7 +8,7 @@ const nextConfig = {
     unoptimized: true, 
     
   },
-  //basePath: "/portfolio",  // Replace with your actual GitHub repo name
+  basePath: "/portfolio",  // Replace with your actual GitHub repo name
   assetPrefix: isProd ? '/portfolio/' : '',
 };
 
