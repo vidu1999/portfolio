@@ -1,6 +1,4 @@
 /** @type {import('next').NextConfig} */
-
-const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
     output: 'export',       
   trailingSlash: true,
@@ -9,8 +7,8 @@ const nextConfig = {
     unoptimized: true, 
     
   },
-  basePath: "/portfolio",  // Replace with your actual GitHub repo name
-  assetPrefix: isProd ? "/portfolio/":'',
+  //basePath: "/portfolio",  // Replace with your actual GitHub repo name
+  //assetPrefix: "/portfolio/",
 };
 
 export default nextConfig;
