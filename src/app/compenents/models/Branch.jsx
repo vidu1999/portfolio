@@ -3,6 +3,8 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
+  try {
+  
   const { nodes, materials } = useGLTF('/models/tree_branch-transformed.glb')
   const gltf = useRef();
   return (
@@ -34,5 +36,8 @@ export default function Model(props) {
         material={materials.Stem}
       />
     </group>
-  )
+  );  
+  } catch (error) {
+    
+  }
 }
