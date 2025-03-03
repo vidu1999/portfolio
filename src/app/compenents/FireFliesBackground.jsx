@@ -39,6 +39,7 @@ return () => clearInterval(interval)
  return (
     <div className="fixed top-0 left-0 w-full h-full -z-10 overflow-hidden">
     {fireflies.map((firefly) => {
+        console.log(fireflies)
     return (
     <div
     key={firefly.id}
