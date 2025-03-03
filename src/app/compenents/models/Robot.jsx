@@ -3,6 +3,7 @@ import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
+  try {
   const { nodes, materials, animations } = useGLTF("/models/low_poly_stone_arche-transformed.glb");
 
   return (
@@ -17,4 +18,13 @@ export default function Model(props) {
       />
     </group>
   );
+} catch (err) {
+  console.error("Error loading model:", err);
+  setError(err);
+}
+
+if (error) return <p>Error loading model. Check console for details.</p>;
+
+return <p>Loading model...</p>;
+
 }
