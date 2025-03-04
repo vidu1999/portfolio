@@ -9,7 +9,7 @@ const nextConfig = {
     
   },
   //basePath: "/portfolio",  
-  assetPrefix: "/portfolio/" ,
+  //assetPrefix: "/portfolio/" ,
   env: {
     NEXT_PUBLIC_BASE_PATH: "/portfolio",
   }
