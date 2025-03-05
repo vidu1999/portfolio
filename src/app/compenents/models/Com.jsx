@@ -71,6 +71,6 @@ gltf.current.rotation.y = (Math.PI / 180) * rotationAngle;
     </group>
   );  
   } catch (error) {
-    
+    console.log("jh");
   }
 }

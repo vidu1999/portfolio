@@ -3,10 +3,9 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
-  try {
-    
-  
   const { nodes, materials } = useGLTF('/models/open_book_about_magic-transformed.glb')
+  try {
+  
   return (
     <group {...props} dispose={null}
     scale={[5,5,5]}
@@ -63,6 +62,6 @@ export default function Model(props) {
       />
     </group>
   );} catch (error) {
-    
+    console.log("yy");
   }
 }
