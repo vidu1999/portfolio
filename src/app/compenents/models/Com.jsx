@@ -7,7 +7,7 @@ export default function Model(props) {
   const gltf = useRef();
   
   const { nodes, materials } = useGLTF('/models/low_poly_stone_arche-transformed.glb')
-  try {
+
    // Initial rotation angle
   const [scaleZ, setScaleZ] = useState(1); // Initial scale along Z-axis
   const decreaseRate = -0.01;
@@ -51,7 +51,7 @@ gltf.current.rotation.y = (Math.PI / 180) * rotationAngle;
      // Convert degrees to radians
     
     console.log(rotationAngle);
-  });
+  });  try {
   return (
     <group {...props} dispose={null}
     ref={gltf}
