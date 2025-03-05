@@ -1,10 +1,10 @@
 "use client"
-import React from 'react'
+import React, { useState } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
   try {
-  const { nodes, materials, animations } = useGLTF("/public/models/low_poly_stone_arche-transformed.glb");
+  const { nodes, materials, animations } = useGLTF("/models/low_poly_stone_arche-transformed.glb");
 
   return (
     <group {...props} dispose={null} position={[-0.2,-2,0]} scale={[7,7,7]} rotation={[0,1.6,0]}>
@@ -20,11 +20,11 @@ export default function Model(props) {
   );
 } catch (err) {
   console.error("Error loading model:", err);
-  setError(err);
+  //setError(err);
 }
 
-if (error) return <p>Error loading model. Check console for details.</p>;
+//if (error) return <p>Error loading model. Check console for details.</p>;
 
-return <p>Loading model...</p>;
+//return <p>Loading model...</p>;
 
 }

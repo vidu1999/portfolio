@@ -49,7 +49,7 @@ return () => clearInterval(interval)
     left: firefly.left,
     animation: `move ${firefly.animationDuration} infinite alternate`
     }}
-    ><Image src={`/public/icon/${firefly.img}`} alt={`Random Image ${firefly.img}` }  width={300} // Set width as needed
+    ><Image src={`/icon/${firefly.img}`} alt={`Random Image ${firefly.img}` }  width={300} // Set width as needed
     height={200}// Set width as needed
     /></div>
 );

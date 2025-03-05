@@ -4,10 +4,10 @@ import { useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 
 export default function Model(props) {
-  try {
+  
   
   const { nodes, materials } = useGLTF('/models/low_poly_stone_arche-transformed.glb')
-  const gltf = useRef();
+  try {const gltf = useRef();
    // Initial rotation angle
   const [scaleZ, setScaleZ] = useState(1); // Initial scale along Z-axis
   const decreaseRate = -0.01;

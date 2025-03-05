@@ -10,9 +10,9 @@ const nextConfig = {
   },
   //basePath: "/portfolio",  
   //assetPrefix: "/portfolio/" ,
-  env: {
+  /*env: {
     NEXT_PUBLIC_BASE_PATH: "/portfolio",
-  }
+  }*/
 };
 
 export default nextConfig;
