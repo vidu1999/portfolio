@@ -2,10 +2,10 @@
 import React, { useState } from 'react'
 import { useGLTF } from '@react-three/drei'
 
-export default function Model(props) {
-  try {
-  const { nodes, materials, animations } = useGLTF("/models/low_poly_stone_arche-transformed.glb");
-
+export default function  Model(props) {
+  
+   const { nodes, materials, animations } =useGLTF("/models/low_poly_stone_arche-transformed.glb");
+try {
   return (
     <group {...props} dispose={null} position={[-0.2,-2,0]} scale={[7,7,7]} rotation={[0,1.6,0]}>
       <mesh

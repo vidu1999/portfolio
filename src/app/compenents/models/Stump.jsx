@@ -4,11 +4,11 @@ import { useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 export default function Model(props) {
   const gltf = useRef()
-  try {
+  
     
   
   const { nodes, materials } = useGLTF('/models/easel_cartoon-transformed.glb')
-  let rotateDirection=1; // Initial rotation direction (1: right, -1: left) // Rotation limit in degrees
+  try {let rotateDirection=1; // Initial rotation direction (1: right, -1: left) // Rotation limit in degrees
   let rotationAngle = 0;
 
   useFrame(() => {

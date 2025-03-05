@@ -3,16 +3,14 @@
 const nextConfig = {
     output: 'export',       
   trailingSlash: true,
+  basePath: "/portfolio",   // Ensures correct path for GitHub Pages
+  assetPrefix: "/portfolio/", // Ensures correct asset loading
   images: {
     domains: ["github-readme-stats.vercel.app"],
     unoptimized: true, 
     
   },
-  //basePath: "/portfolio",  
-  //assetPrefix: "/portfolio/" ,
-  /*env: {
-    NEXT_PUBLIC_BASE_PATH: "/portfolio",
-  }*/
+  
 };
 
 export default nextConfig;

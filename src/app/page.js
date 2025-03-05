@@ -44,11 +44,9 @@ export default function Home() {
   
 
 <RenderModels>
-try {
+
   <Robot></Robot>
-} catch (error) {
-  
-}
+
 
 
 </RenderModels>
