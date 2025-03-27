@@ -3,8 +3,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vidu1999.github.io/portfolio",
-  "scripts": {
+   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "export": "next build && next export",
