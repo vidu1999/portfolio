@@ -1,42 +1,108 @@
 {
   
   "name": "portfolio",
+  
   "version": "0.1.0",
+  
   "private": true,
-   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "export": "next build && next export",
-    "start": "next start",
-    "lint": "next lint",
-    "predeploy": "next build",
+  
+  "scripts": {
+  
+    
+  "dev": "next dev",
+  
+    
+  "build": "next build",
+  
+    
+  "export": "next build && next export",
+  
+    
+  "start": "next start",
+  
+    
+  "lint": "next lint",
+  
+    
+  "predeploy": "npm run build", 
     "deploy": "gh-pages -d out"
+  
   },
+  
   "dependencies": {
-    "@react-pdf-viewer/core": "^3.12.0",
-    "@react-pdf-viewer/default-layout": "^3.12.0",
-    "@react-three/drei": "^9.105.2",
-    "@react-three/fiber": "^8.16.1",
-    "clsx": "^2.1.0",
-    "jspdf": "^2.5.2",
-    "lucide-react": "^0.365.0",
-    "next": "14.1.4",
-    "nodemailer": "^6.9.13",
-    "react": "^18",
-    "react-dom": "^18",
-    "react-icons": "^5.1.0",
-    "react-pdf": "^9.2.1",
-    "react-slick": "^0.30.2",
-    "sharp": "^0.33.5",
-    "slick-carousel": "^1.8.1",
-    "typed.js": "^2.1.0"
+  
+    
+  "@react-pdf-viewer/core": "^3.12.0",
+  
+    
+  "@react-pdf-viewer/default-layout": "^3.12.0",
+  
+    
+  "@react-three/drei": "^9.105.2",
+  
+    
+  "@react-three/fiber": "^8.16.1",
+  
+    
+  "clsx": "^2.1.0",
+  
+    
+  "jspdf": "^2.5.2",
+  
+    
+  "lucide-react": "^0.365.0",
+  
+    
+  "next": "14.1.4",
+  
+    
+  "nodemailer": "^6.9.13",
+  
+    
+  "react": "^18",
+  
+    
+  "react-dom": "^18",
+  
+    
+  "react-icons": "^5.1.0",
+  
+    
+  "react-pdf": "^9.2.1",
+  
+    
+  "react-slick": "^0.30.2",
+  
+    
+  "sharp": "^0.33.5",
+  
+    
+  "slick-carousel": "^1.8.1",
+  
+    
+  "typed.js": "^2.1.0"
+  
   },
+  
   "devDependencies": {
-    "autoprefixer": "^10.0.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.1.4",
-    "gh-pages": "^6.3.0",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0"
+  
+    
+  "autoprefixer": "^10.0.1",
+  
+    
+  "eslint": "^8",
+  
+    
+  "eslint-config-next": "14.1.4",
+  
+    
+  "gh-pages": "^6.3.0",
+  
+    
+  "postcss": "^8",
+  
+    
+  "tailwindcss": "^3.3.0"
+  
   }
 }
