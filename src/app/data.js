@@ -87,6 +87,13 @@ export const projectsData = [
     date: "2024-08-14",
     demoLink: "https://mindfulmoments.example.com",
   },
+  {
+    id: 11,
+    name: "Maintanance App",
+    description: "Create a Maintanance App for Company in my Intern period",
+    date: "2025-05-04",
+    demoLink: "https://mindfulmoments.example.com",
+  },
 ];
 export const personData=[
   {

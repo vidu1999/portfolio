@@ -41,7 +41,7 @@ const About = () => {
 			     <h1 className="text-lg font-caveat mb-4 text-green-500">HELLO! I AM</h1>
 				 <h2 className="font-multiple text-3xl mb-4 text-blue-500">VIDURA KAVINDA</h2>
 				 <h3 className="p-3 text-lg">I &apos;M A<br/><span className="text-cyan-400 text-2xl mt2"><Animation about={'1'}></Animation></span></h3>
-			<p className='text-center'>I&apos;m a full stack developer with 2+ years of experience.<br/>
+			<p className='text-center'>I&apos;m a full stack developer with 4+ years of experience.<br/>
 I specialize in creating scalable and secure<br/>
 web applications using a variety of technologies.
 			</p>
