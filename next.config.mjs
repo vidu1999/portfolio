@@ -29,7 +29,8 @@ const nextConfig = {
       },
     });
     return config;
-  }
+  },
+   compress: false,
   /*images: {
     //domains: ["github-readme-stats.vercel.app"],
     unoptimized: true, 
