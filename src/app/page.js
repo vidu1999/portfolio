@@ -10,6 +10,11 @@ import Robot from "./compenents/models/Robot"
 import { IceCream, Loader2Icon } from 'lucide-react';
 import { Grechen_Fuemen } from 'next/font/google';
 import Animation from './compenents/Animation';
+import dynamic from 'next/dynamic';
+const ModelViewer = dynamic(() => import('../app/compenents/ModelViewer'), {
+  ssr: false,
+  loading: () => <div>Loading 3D Viewer...</div>
+});
 const grechenFuemen = Grechen_Fuemen({
   subsets: ['latin'],
   weight: '400',
@@ -41,15 +46,16 @@ export default function Home() {
 <div className={grechenFuemen.className && 'mt-10 fixed '}><h1 className='font-grechen text-2xl justify-center text-blue-800 items-center'>HELLO WELLCOME MY PORTFOLIO</h1></div>
 
 <div className="w-full h-screen bottom-0 fixed ">
-  
+  <ModelViewer modelPath="/models/low_poly_stone_arche-transformed.glb" />
 
-<RenderModels>
+{/*<RenderModels>
 
   <Robot></Robot>
 
 
 
-</RenderModels>
+</RenderModels>*/}
+
 
 </div>
 <div className="w-full h-screen flex justify-center items-center  bottom-10 proim fixed">
