@@ -3,13 +3,15 @@ import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
-  try {
-    const modelPath = process.env.NODE_ENV === 'production' 
+  // ✅ Hook called unconditionally at top level
+  const modelPath = process.env.NODE_ENV === 'production' 
     ? '/portfolio/models/low_poly_stone_arche-transformed.glb'
     : '/models/low_poly_stone_arche-transformed.glb';
   
   const { nodes, materials } = useGLTF(modelPath);
-    
+  
+  // If model data exists, render the model
+  if (nodes && materials) {
     return (
       <group {...props} dispose={null} position={[-0.2, -2, 0]} scale={[7, 7, 7]} rotation={[0, 1.6, 0]}>
         <mesh
@@ -22,14 +24,13 @@ export default function Model(props) {
         />
       </group>
     );
-  } catch (error) {
-    console.error("Error loading model:", error);
-    // Fallback cube when model fails to load
-    return (
-      <mesh {...props}>
-        <boxGeometry args={[1, 1, 1]} />
-        <meshStandardMaterial color="red" />
-      </mesh>
-    );
   }
+  
+  // Fallback if model doesn't load
+  return (
+    <mesh {...props}>
+      <boxGeometry args={[1, 1, 1]} />
+      <meshStandardMaterial color="red" />
+    </mesh>
+  );
 }
