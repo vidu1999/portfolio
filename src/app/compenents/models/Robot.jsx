@@ -4,11 +4,9 @@ import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
   // ✅ Hook called unconditionally at top level
-  const modelPath = process.env.NODE_ENV === 'production' 
-    ? '/portfolio/models/low_poly_stone_arche-transformed.glb'
-    : '/models/low_poly_stone_arche-transformed.glb';
+  const { nodes, materials } = useGLTF("/models/low_poly_stone_arche-transformed.glb");
   
-  const { nodes, materials } = useGLTF(modelPath);
+ 
   
   // If model data exists, render the model
   if (nodes && materials) {
