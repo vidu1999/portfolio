@@ -10,14 +10,14 @@ const Contact = () => {
     
 
       <section className="overflow-hidden w-full h-screen/2 block items-center justify-center text-white">
-      <div className="lg:flex flex-row top-3 mx-auto justify-center items-center ">
+      <div className="lg:flex lg:flex-row flex-colomn top-3 mx-auto justify-center items-center ">
         <div className="h-screen/2 border border-white rounded-lg shadow-md lg:flex lg:justify-between items-center custom-bg m-2">
           <form action="https://formsubmit.co/c563775632c193a035157c933aec30f2" method="POST" name="contact">
-            <div className="lg:flex m-2 ">
+            <div className="flex lg:m-2 justify-center ">
               <input  type="text" placeholder="FIRST NAME" name="firstname" required />
               <input type="text" placeholder="LAST NAME" name="lastname" required />
             </div>
-            <div className="lg:flex m-2">
+            <div className="flex lg:m-2 justify-center">
               <input type="tel" placeholder="PHONE NUMBER" name="tel" />
               <input type="email" placeholder="EMAIL" name="email" required />
             </div>
@@ -26,7 +26,7 @@ const Contact = () => {
           </form>
           
           
-        </div>{<PersonLayout/>}
+        </div><div className="flex justify-center items-center ">{<PersonLayout/>}</div>
       </div></section>
     
   );
