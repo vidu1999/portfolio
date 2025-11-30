@@ -1,42 +1,19 @@
 /** @type {import('next').NextConfig} */
-//const isProd = process.env.NODE_ENV === 'production';
+const isProd = process.env.NODE_ENV === 'production';
+
+// GitHub Pages repo name (derived from package.json homepage or set manually)
+const repo = 'portfolio';
+const basePath = isProd ? `/${repo}` : '';
+
 const nextConfig = {
-    //output: 'export',  
-     //basePath: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
-  //assetPrefix: process.env.NODE_ENV === 'production' ? '/portfolio/' : '',     
-  //trailingSlash: true,
-  //basePath: "/portfolio",   // Ensures correct path for GitHub Pages
-  //assetPrefix: "/portfolio/", // Ensures correct asset loading
-   //basePath: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
-    // For GitHub Pages deployment
   output: 'export',
   trailingSlash: true,
-  basePath: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/portfolio/' : '',
   images: {
-    unoptimized: true
+    unoptimized: true,
   },
-  // Add webpack configuration for Three.js
-  webpack: (config) => {
-    config.module.rules.push({
-      test: /\.(glb|gltf)$/,
-      use: {
-        loader: 'file-loader',
-        options: {
-          publicPath: '/_next/static/files/',
-          outputPath: 'static/files/',
-        },
-      },
-    });
-    return config;
-  },
-   compress: false,
-  /*images: {
-    //domains: ["github-readme-stats.vercel.app"],
-    unoptimized: true, 
-    
-  },*/
-  
+  assetPrefix: basePath,
+  basePath,
+  compress: false,
 };
 
 export default nextConfig;
