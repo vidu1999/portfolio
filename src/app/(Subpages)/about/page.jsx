@@ -1,6 +1,6 @@
 import Image from "next/image";
-import abg from "/public/bg/abg.png";
-import RenderModels from "/src/app/compenents/RenderModels";
+// background image via path; no import
+import RenderModels from "@/app/compenents/RenderModels";
 import About from "@/app/compenents/about";
 //import ProjectList from "@/app/compenents/about";
 //import {projectsData} from '/src/app/data'
@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <div className="absolute inset-0">
-<Image src={abg} alt="background-image" className="w-full h-full fixed object-cover object-center opacity-25"/>
+<Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/bg/abg.png`} alt="background-image" className="w-full h-full fixed object-cover object-center opacity-25"/>
 </div>
 
 <div className="w-full h-screen bottom-0 fixed">

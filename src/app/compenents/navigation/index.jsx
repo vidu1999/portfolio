@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import {BtnList} from '/src/app/data'
+import {BtnList} from '@/app/data'
 import Navigationbtn from './Navigationbtn';
 import Navigationbtnsm from './Navigationbtnsm';
 

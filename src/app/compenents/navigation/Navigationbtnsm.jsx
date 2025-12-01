@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import {BtnList} from '/src/app/data'
+import {BtnList} from '@/app/data'
 import { Github, Home, Linkedin, NotebookText, Palette, Phone, Twitter, User } from "lucide-react";
 const getIcon = (icon) => {
     switch (icon) {

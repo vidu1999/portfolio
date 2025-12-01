@@ -14,6 +14,9 @@ const nextConfig = {
     unoptimized: true,
   },
   compress: false,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
 };
 
 module.exports = nextConfig;
