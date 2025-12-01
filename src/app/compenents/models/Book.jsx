@@ -3,7 +3,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
-  const { nodes, materials } = useGLTF('/models/open_book_about_magic-transformed.glb')
+  const { nodes, materials } = useGLTF(`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/models/open_book_about_magic-transformed.glb`)
   try {
   
   return (

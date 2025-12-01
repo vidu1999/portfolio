@@ -4,7 +4,7 @@ import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
   // ✅ Hook called unconditionally at top level
-  const { nodes, materials } = useGLTF("/models/low_poly_stone_arche-transformed.glb");
+  const { nodes, materials } = useGLTF(`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/models/low_poly_stone_arche-transformed.glb`);
   
  
   

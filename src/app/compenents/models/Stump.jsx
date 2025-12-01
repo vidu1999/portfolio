@@ -7,7 +7,7 @@ export default function Model(props) {
   
     
   
-  const { nodes, materials } = useGLTF('/models/easel_cartoon-transformed.glb')
+  const { nodes, materials } = useGLTF(`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/models/easel_cartoon-transformed.glb`)
   try {let rotateDirection=1; // Initial rotation direction (1: right, -1: left) // Rotation limit in degrees
   let rotationAngle = 0;
 

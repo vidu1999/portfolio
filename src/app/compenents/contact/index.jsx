@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import {personData} from '/src/app/data'
+import {personData} from '@/app/data'
 import PersonList from "@/app/compenents/contact/PersonList"
 import PersonLayout from './PersonLayout';
 import Slider from 'react-slick';

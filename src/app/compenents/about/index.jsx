@@ -1,6 +1,6 @@
 "use client"
 import React,{useEffect,useRef} from 'react'
-import pi from "/public/bg/vkj1.jpg";
+// profile image path via basePath; no import
 import Image from "next/image";
 import Link from 'next/link'
 import FacebookBtn from '../Facebook';
@@ -27,7 +27,7 @@ const About = () => {
 		<div className='grid w-full h-screen/2 item-center justify-center lg:flex mb-8'>
 		<div className='item-center justify-center flex'>
 		<div ref={divRef} className="p-6 w-64  backdrop-blur-3xl shadow-lg rounded-lg border justify-center items-center border-white custom-bg block">
-			<div className='proim justify-center items-center flex '><Image src={pi} alt='img' className='border-10 border-white block rounded-full '></Image></div>
+			<div className='proim justify-center items-center flex '><Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/bg/vkj1.jpg`} alt='img' className='border-10 border-white block rounded-full ' width={256} height={256} /></div>
 			
 			<h2 className='text-base font-normal mb-4'>VIDURA KAVINDA</h2>
 				 <h6 className="text-blue-400 text-sm ">BSc. COMPUTER SCIENCE</h6>
