@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <div className="absolute inset-0">
-<Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/bg/cbg.png` } alt="background-image" className="w-full h-full fixed object-cover object-center opacity-25"/>
+<Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/bg/cbg.png` } alt="background-image" fill priority className="object-cover object-center opacity-25"/>
 </div>
 
 {<Contact></Contact>}

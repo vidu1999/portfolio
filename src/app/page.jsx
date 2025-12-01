@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <main className=" flex min-h-screen flex-col items-center justify-between relative">
       <div className="absolute inset-0 overflow-hidden fixed">
-        <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/bg/bg.png`} alt="background-image" className="w-full h-full object-cover object-center opacity-25 overflow-hidden fixed" />
+        <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/bg/bg.png`} alt="background-image" fill priority className="object-cover object-center opacity-25 overflow-hidden" />
       </div>
       <div className={grechenFuemen.className && 'mt-10 fixed '}><h1 className='font-grechen text-2xl justify-center text-blue-800 items-center'>HELLO WELLCOME MY PORTFOLIO</h1></div>
 
@@ -41,7 +41,7 @@ export default function Home() {
 
       </div>
       <div className="w-full h-screen flex justify-center items-center  bottom-10 proim fixed">
-        <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/bg/vkj1.jpg`} className="" alt='img' style={{ width: 140 }} />
+        <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/bg/vkj1.jpg`} alt='img' width={140} height={140} />
 
       </div>
       <div className="w-full h-screen flex justify-center items-end lg:items-center lg:top-16 bottom-10  fixed">
