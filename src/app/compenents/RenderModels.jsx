@@ -57,12 +57,10 @@ function RenderModels({children,className}) {
         }, false)
       }}
     >
-      <ErrorBoundary>
-        <Suspense fallback={<Fallback />}> 
-          {children}
-        </Suspense>
-        <Environment preset='city'/>
-      </ErrorBoundary>
+      <Suspense fallback={null}> 
+        {children}
+      </Suspense>
+      <Environment preset='city'/>
     </Canvas>
   )
 }
