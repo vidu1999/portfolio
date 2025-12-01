@@ -22,7 +22,7 @@ const grechenFuemen = Grechen_Fuemen({
 export default function Home() {
   return (
     <main className=" flex min-h-screen flex-col items-center justify-between relative">
-      <div className="absolute inset-0 overflow-hidden fixed">
+      <div className="fixed inset-0 overflow-hidden relative">
         <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/bg/bg.png`} alt="background-image" fill priority className="object-cover object-center opacity-25 overflow-hidden" />
       </div>
       <div className={grechenFuemen.className && 'mt-10 fixed '}><h1 className='font-grechen text-2xl justify-center text-blue-800 items-center'>HELLO WELLCOME MY PORTFOLIO</h1></div>

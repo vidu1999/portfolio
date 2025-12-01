@@ -9,7 +9,7 @@ import Stump from "@/app/compenents/models/Stump"
 export default function Home() {
   return (
     <>
-      <div className="absolute inset-0">
+      <div className="fixed inset-0 relative">
 <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/bg/pbg.png`} alt="background-image" fill priority className="object-cover object-center opacity-25"/>
 </div>
 <div className="w-full h-screen bottom-0 fixed">
