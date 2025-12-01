@@ -1,4 +1,4 @@
-import HomeBtn from "/src/app/compenents/HomeBtn";
+import HomeBtn from "@/app/compenents/HomeBtn";
 export default function SubPagesLayout({ children }) {
     return (
     <main className="flex min-h-screen flex-col items-center justify-center py-20">

@@ -43,7 +43,7 @@ return () => clearInterval(interval)
     return (
     <div
     key={firefly.id}
-    className="absolute roudned-full w-[20px] h-[20px] bg-firefly-radial bg-firefly-radial"
+    className="absolute rounded-full w-[20px] h-[20px] bg-firefly-radial"
     style={{
     top: firefly.top,
     left: firefly.left,

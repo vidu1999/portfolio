@@ -2,7 +2,6 @@
 import React,{useEffect,useRef} from 'react'
 import pi from "/public/bg/vkj1.jpg";
 import Image from "next/image";
-import Head from 'next/head';
 import Link from 'next/link'
 import FacebookBtn from '../Facebook';
 import Animation from '../Animation';
