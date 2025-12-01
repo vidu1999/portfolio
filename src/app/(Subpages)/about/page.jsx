@@ -4,7 +4,7 @@ import RenderModels from "@/app/compenents/RenderModels";
 import About from "@/app/compenents/about";
 //import ProjectList from "@/app/compenents/about";
 //import {projectsData} from '/src/app/data'
-import Book from "/src/app/compenents/models/Book"
+import Book from "@/app/compenents/models/Book"
 //import Stump from "/src/app/compenents/models/Stump"
 //import Homebtn from "/src/app/compenents/Homebtn";
 export default function Home() {
