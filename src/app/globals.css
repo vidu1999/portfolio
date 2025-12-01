@@ -135,11 +135,11 @@ animation:flImg 4s ease-in-out infinite;
 	display:flex;
 	align-items:center;
 	color:white;
-  scroll-behavior:hidden;
+  overflow: hidden;
 }
 .ab .ban{
 	padding:25px;
-	background-color:006D32;
+	background-color:#006D32;
 	width:252px;
 	box-shadow:5px 5px 5px #6ca0a1;
 	border-radius:10px;
@@ -156,7 +156,7 @@ animation:flImg 4s ease-in-out infinite;
 	position:relative;
 	left:100px;
 	width:650px;
-	z-index:0rem;
+	z-index:0;
 }
 .ab .maitx .dow{
 	text-decoration:none;

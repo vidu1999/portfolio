@@ -15,6 +15,9 @@ module.exports = {
       },
       colors: {
         aqua: '#00FFFF',
+        background: '#0D1117',
+        foreground: '#E6EDF3',
+        accent: '#29FD53',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
