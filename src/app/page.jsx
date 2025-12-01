@@ -19,12 +19,15 @@ const grechenFuemen = Grechen_Fuemen({
   subsets: ['latin'],
   weight: '400',
 });
+import FireFliesBackground from "./compenents/FireFliesBackground";
+
 export default function Home() {
   return (
     <main className=" flex min-h-screen flex-col items-center justify-between relative">
-      <div className="fixed inset-0 overflow-hidden relative">
+      <div className="fixed inset-0 overflow-hidden -z-50">
         <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/bg/bg.png`} alt="background-image" fill priority className="object-cover object-center opacity-25 overflow-hidden" />
       </div>
+      <FireFliesBackground />
       <div className={grechenFuemen.className && 'mt-10 fixed '}><h1 className='font-grechen text-2xl justify-center text-blue-800 items-center'>HELLO WELLCOME MY PORTFOLIO</h1></div>
 
       <div className="w-full h-screen bottom-0 fixed ">
