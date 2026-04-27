@@ -1,13 +1,13 @@
 'use client'
-import React,{useState,useEffect} from 'react'
+import React from 'react'
 import Image from "next/image";
-import bg from "/public/bg/bg.png";
-import pi from "/public/bg/vkj1.jpg";
+// bg image loaded via path string; no import needed
+// profile image loaded via path string; no import needed
 import RenderModels from "./compenents/RenderModels";
 import Com from "./compenents/models/Com";
 import Navigation from "./compenents/navigation";
 import Robot from "./compenents/models/Robot"
-import { IceCream, Loader2Icon } from 'lucide-react';
+import { IceCream } from 'lucide-react';
 import { Grechen_Fuemen } from 'next/font/google';
 import Animation from './compenents/Animation';
 import dynamic from 'next/dynamic';
@@ -22,23 +22,9 @@ const grechenFuemen = Grechen_Fuemen({
   subsets: ['latin'],
   weight: '400',
 });
-export default function Home() {
-   const [loading, setLoading] = useState(true);
-    
-   useEffect(() => {
-    const handleLoad = () => {
-      setLoading(false);
-    };
+import FireFliesBackground from "./compenents/FireFliesBackground";
 
-    // Check if the page has already loaded
-    if (document.readyState === "complete") {
-      setLoading(false);
-    } else {
-      window.addEventListener("load", handleLoad);
-    }return () => {
-      window.removeEventListener("load", handleLoad);
-    };
-  }, [loading]);
+export default function Home() {
   return (
    <>
     {!loading ?
@@ -48,16 +34,16 @@ export default function Home() {
 </div>
 <div className={grechenFuemen.className && 'mt-0 fixed '}><h1 className='font-grechen text-2xl justify-center text-blue-800 items-center'>HELLO WELLCOME MY PORTFOLIO</h1></div>
 
-<div className="w-full h-screen bottom-0 fixed ">
-  {/*<ModelViewer modelPath="/models/low_poly_stone_arche-transformed.glb" />*/}
+      <div className="w-full h-screen bottom-0 fixed ">
+        {/*<ModelViewer modelPath="/models/low_poly_stone_arche-transformed.glb" />*/}
 
-<RenderModels>
+        <RenderModels>
 
-  <Robot></Robot>
+          <Robot></Robot>
 
 
 
-</RenderModels>
+        </RenderModels>
 
 
 </div>

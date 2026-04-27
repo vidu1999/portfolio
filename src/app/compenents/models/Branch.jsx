@@ -3,7 +3,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
-    const { nodes, materials } = useGLTF('/models/tree_branch-transformed.glb')
+    const { nodes, materials } = useGLTF(`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/models/tree_branch-transformed.glb`)
   try {
 
   const gltf = useRef();
