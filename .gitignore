@@ -20,6 +20,10 @@
 .DS_Store
 *.pem
 
+# ignore large 3D model assets (store externally or add when pushing LFS is configured)
+public/models/*.glb
+public/projects/*.zip
+
 # debug
 npm-debug.log*
 yarn-debug.log*
