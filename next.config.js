@@ -11,8 +11,9 @@ const nextConfig = {
     // For GitHub Pages deployment
   output: 'export',
   trailingSlash: true,
-  basePath: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/portfolio/' : '',
+  // GitHub Pages serves the site under the repo name; update to your repo path
+  basePath: process.env.NODE_ENV === 'production' ? '/my-3d-portfolio' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/my-3d-portfolio/' : '',
   images: {
     unoptimized: true
   },

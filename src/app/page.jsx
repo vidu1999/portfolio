@@ -11,6 +11,9 @@ import { IceCream, Loader2Icon } from 'lucide-react';
 import { Grechen_Fuemen } from 'next/font/google';
 import Animation from './compenents/Animation';
 import dynamic from 'next/dynamic';
+import Portfolio3D from './compenents/Portfolio3D';
+import Corsorfy from './compenents/Corsorfy';
+import DroneMeetup from './compenents/DroneMeetup';
 const ModelViewer = dynamic(() => import('./compenents/ModelViewer'), {
   ssr: false,
   loading: () => <div>Loading 3D Viewer...</div>
@@ -43,7 +46,7 @@ export default function Home() {
       <div className="absolute inset-0 overflow-hidden fixed">
 <Image src={bg} alt="background-image" className="w-full h-full object-cover object-center opacity-25 overflow-hidden fixed"/>
 </div>
-<div className={grechenFuemen.className && 'mt-10 fixed '}><h1 className='font-grechen text-2xl justify-center text-blue-800 items-center'>HELLO WELLCOME MY PORTFOLIO</h1></div>
+<div className={grechenFuemen.className && 'mt-0 fixed '}><h1 className='font-grechen text-2xl justify-center text-blue-800 items-center'>HELLO WELLCOME MY PORTFOLIO</h1></div>
 
 <div className="w-full h-screen bottom-0 fixed ">
   {/*<ModelViewer modelPath="/models/low_poly_stone_arche-transformed.glb" />*/}
@@ -59,18 +62,19 @@ export default function Home() {
 
 </div>
 <div className="w-full h-screen flex justify-center items-center  bottom-10 proim fixed">
-<Image src={pi} className="" alt='img' style={{width:140}}/>
+
 
   </div> 
   <div className="w-full h-screen flex justify-center items-end lg:items-center lg:top-16 bottom-10  fixed">
-  <div className="w-full h-screen flex justify-center items-end lg:items-center lg:bottom-0 lg:pt-16 lg:mt-8 bottom-16 fixed">WHO AM I</div>
-    <div><Animation about={'0'}></Animation></div>
+  
+    
   </div>
   
-<Navigation />
 
+
+<Portfolio3D></Portfolio3D>
+<Corsorfy></Corsorfy>
 </main>):(<Loader2Icon ></Loader2Icon>)
 }</>);
   
 }
- 

@@ -24,8 +24,10 @@
   "lint": "next lint",
   
     
-  "predeploy": "npm run build", 
-    "deploy": "gh-pages -d out"
+  "predeploy": "npm run build",
+  
+    
+  "deploy": "gh-pages -d out"
   
   },
   
@@ -44,7 +46,10 @@
   "@react-three/fiber": "^8.16.1",
   
     
-  "clsx": "^2.1.0",
+  "clsx": "^2.1.1",
+  
+    
+  "framer-motion": "^12.38.0",
   
     
   "jspdf": "^2.5.2",
@@ -65,7 +70,7 @@
   "react-dom": "^18",
   
     
-  "react-icons": "^5.1.0",
+  "react-icons": "^5.6.0",
   
     
   "react-pdf": "^9.2.1",
@@ -105,5 +110,6 @@
   "tailwindcss": "^3.3.0"
   
   },
+  
   "homepage": "https://vidu1999.github.io/my-3d-portfolio"
 }

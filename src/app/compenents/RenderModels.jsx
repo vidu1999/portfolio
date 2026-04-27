@@ -7,7 +7,7 @@ import Navigation from './navigation'
 function RenderModels({children,className}) {
   return (
     
-      <Canvas className={clsx("w-screen h-screen relative",className)}>
+      <Canvas className={clsx("relative h-full w-full pointer-events-none",className)}>
         <Suspense fallback={null}>
             {children}
         </Suspense>

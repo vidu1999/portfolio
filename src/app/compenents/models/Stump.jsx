@@ -22,7 +22,7 @@ gltf.current.position.y += (Math.PI / 180) * rotationAngle*0.05;
   });
   return (
     <group ref={gltf} {...props} dispose={null}
-        position={[7,-4,-1]}
+        position={[7,-4,0]}
     scale={[1,1,1]}
     rotation={[0,0,0.1]}
     >

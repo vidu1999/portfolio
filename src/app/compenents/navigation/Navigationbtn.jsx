@@ -40,7 +40,7 @@ const Navigationbtn=({x,y, label, link, icon, newTab}) => {
         className="text-foreground rounded-full  flex items-center justify-center custom-bg
 " 
 aria-label={label} name={label}>
-        <span className="hidden lg:block relative  w-14 h-14 p-4 lg:animate-spin-slow-reverse group-hover:pause hover:text-accent">
+        <span className="hidden sm:pause lg:pause lg:block relative  w-14 h-14 p-4  lg:animate-spin-slow-reverse  hover:text-accent">
                 {getIcon(icon)}
 
                 <span className="peer bg-transparent absolute top-0 left-0 w-full h-full" />
